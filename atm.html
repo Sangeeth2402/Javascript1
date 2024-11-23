@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+
+    <script>
+    let a=prompt("WELCOME\nENTER YOUR ACCOUNT NUMBER HERE")
+    switch(a){
+        case "0123123":
+        console.log("HI SURYA RAJ, WELCOME");
+        let b=prompt("ENTER YOUR PIN NUMBER")
+        if(b==1302){
+            let c=prompt("BANKING press 1\nMINI STATEMENT press 2\nPIN CHANGE press 3\nDEPOSIT press 4\nWITHDRAWAL press 5")
+            switch(c){
+                case "1":
+                console.log("PLEASE VISIT THE MAIN BRANCH");
+                break;
+        
+                case "2":
+                console.log("YOUR ACCOUNT BALANCE IS DISPLAYED");
+                break;
+        
+                case "3":
+                console.log("CHANGE YOUR PIN NUMBER HERE");
+                break;
+        
+                case "4":
+                console.log("PLEASE DEPOSIT HERE");
+                break;
+        
+                case "5":
+                var d=prompt("ENTER YOUR AMOUNT\nYOUR TRANSACTION UNDER 10000 ONLY");
+                if(d>=10000){
+                    console.log(`UNABLE TO FETCH CASH PLEASE ENTER UNDER LIMIT`)}else{
+                        console.log(`COLLECT YOUR CASH HERE`)
+                    }
+                break;
+        
+                default:
+                console.log(`ENTER A VALID NUMBERIC FOR THE SUITABLE INPUT`)
+            }
+        }
+        else{
+            console.log("ENTER CORRECT PIN NUMBER")
+        }
+        break;
+
+        default:
+        console.log("YOUR ACCOUNT NUMBER IS WRONG");
+        break;
+
+    }
+    
+    
+
+    
+    
+        
+    
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

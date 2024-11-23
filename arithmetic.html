@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic</title>
+    <script>
+        let a = parseFloat(prompt("ENTER THE FIRST VALUE"));
+        console.log(a);
+        
+        let b = parseFloat(prompt("ENTER THE SECOND VALUE"));
+        console.log(b);
+        
+        let c = prompt("CHOOSE AN ARITHMETIC OPERATION\n\nFOR ADDITION:0\nFOR SUBTRACTION:1\nFOR MULTIPLICATION:2\nFOR DIVISION:3");
+        
+        switch (c) {
+            case "0":
+                console.log(a + b);
+                break;
+        
+            case "1":
+                console.log(a - b);
+                break;
+        
+            case "3":
+                console.log(a * b);
+                break;
+        
+            case"4":
+                console.log(a / b);
+                break;
+        
+            default:
+                console.log("ERROR");
+                break;
+        }
+        
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
